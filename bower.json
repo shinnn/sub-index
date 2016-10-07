@@ -1,0 +1,32 @@
+{
+  "name": "sub-index",
+  "description": "Find an array index of the substitute value that should be chosen when a given index is deleted",
+  "keywords": [
+    "find",
+    "index",
+    "number",
+    "array",
+    "substitute",
+    "candidate",
+    "choice",
+    "predecessor"
+  ],
+  "main": "module.js",
+  "moduleType": "es6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/sub-index.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}

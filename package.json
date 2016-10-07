@@ -1,0 +1,40 @@
+{
+  "name": "sub-index",
+  "version": "1.0.0",
+  "description": "Find an array index of the substitute value that should be chosen when a given index is deleted",
+  "repository": "shinnn/sub-index",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "prebuild": "eslint --fix module.js test.js",
+    "build": "rollup --config=node:module",
+    "pretest": "npm run-script build",
+    "test": "istanbul cover test.js"
+  },
+  "license": "MIT",
+  "module": "module.js",
+  "files": [
+    "index.js",
+    "module.js"
+  ],
+  "keywords": [
+    "find",
+    "index",
+    "number",
+    "array",
+    "substitute",
+    "candidate",
+    "choice",
+    "predecessor"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config": "^3.3.0",
+    "eslint": "^3.7.1",
+    "istanbul": "^0.4.5",
+    "rollup": "^0.36.1",
+    "rollup-config-module": "0.0.2",
+    "tape": "^4.6.1"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn"
+  }
+}
