@@ -15,7 +15,6 @@ const array = new Array(3);
 
 subIndex(array, 1); //=> 0
 subIndex(array, 2); //=> 1
-subIndex(array, 3); //=> 2
 
 subIndex(array, 0); //=> 1
 ```
@@ -39,7 +38,7 @@ bower install sub-index
 ### subIndex(*array*, *index*)
 
 *array*: `Array` (non-empty array)  
-*index*: `Number` (index of the array)  
+*index*: `Number` (index of the array assumed to be deleted)  
 Return: `Number` or `null`
 
 Essentially, it returns the predecessor number of a given `index`.
