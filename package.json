@@ -5,7 +5,7 @@
   "repository": "shinnn/sub-index",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "prebuild": "eslint --fix module.js test.js",
+    "prebuild": "eslint --fix --format=codeframe module.js test.js",
     "build": "rollup --config=node:module",
     "pretest": "npm run-script build",
     "test": "istanbul cover test.js"
@@ -27,12 +27,12 @@
     "predecessor"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config": "^3.3.0",
-    "eslint": "^3.7.1",
+    "@shinnn/eslint-config": "^3.3.2",
+    "eslint": "^3.9.1",
     "istanbul": "^0.4.5",
-    "rollup": "^0.36.1",
-    "rollup-config-module": "0.0.2",
-    "tape": "^4.6.1"
+    "rollup": "^0.36.3",
+    "rollup-config-module": "^1.0.0",
+    "tape": "^4.6.2"
   },
   "eslintConfig": {
     "extends": "@shinnn"
